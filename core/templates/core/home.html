@@ -50,6 +50,28 @@
 
     <div class="content-container">
 
+        <section id="perfil" class="mb-4">
+
+            <!-- Bloque centrado con tu nombre y datos -->
+            <div class="text-center mb-4">
+                <h1 class="h3 fw-bold mb-1">PEDRO EDUARDO DONOSO RAMÍREZ</h1>
+                <p class="mb-0">
+                    Desarrollador Full Stack |
+                    <a href="https://wa.me/56953968887" target="_blank" class="text-decoration-none">
+                        📱 +56 9 5396 8887
+                    </a>
+                    |
+                    <a href="mailto:pedro.eduardo.donoso@gmail.com" class="text-decoration-none">
+                        📧 pedro.eduardo.donoso@gmail.com
+                    </a>
+                </p>
+            </div>
+
+            <h2 class="h4 mt-4">Perfil Profesional</h2>
+            <p>{{ perfil.resumen|linebreaks }}</p>
+        </section>
+
+
         <!-- PERFIL -->
         <section id="perfil">
             <h1>{{ perfil.nombre }}</h1>
