@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio - {{ perfil.nombre }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #1857d8;
+            padding: 10px 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 80px auto 40px;
+            /* margen superior por el navbar fijo */
+            padding: 0 20px;
+        }
+
+        h1,
+        h2 {
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <!-- Aquí puedes poner el icono de LinkedIn como <a href="{{ perfil.linkedin }}" target="_blank">in</a> -->
+    </div>
+
+    <div class="container">
+
+        <!-- PERFIL -->
+        <section id="perfil">
+            <h1>{{ perfil.nombre }}</h1>
+            <p><strong>{{ perfil.titulo }}</strong></p>
+
+            <h2>Perfil Profesional</h2>
+            <p>{{ perfil.resumen }}</p>
+        </section>
+
+        <!-- EXPERIENCIA -->
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            {% for exp in experiencias %}
+            <h3>{{ exp.puesto }} en {{ exp.empresa }}</h3>
+            <p>{{ exp.descripcion|linebreaks }}</p>
+            {% endfor %}
+        </section>
+
+        <!-- CERTIFICADOS -->
+        <section id="certificados">
+            <h2>Certificados</h2>
+            {% for cert in certificados %}
+            <p>
+                <strong>{{ cert.nombre }}</strong> - {{ cert.entidad }}
+                {% if cert.url_certificado %}
+                | <a href="{{ cert.url_certificado }}" target="_blank">Ver certificado</a>
+                {% endif %}
+            </p>
+            {% endfor %}
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            {% for hab in habilidades %}
+            <p>{{ hab.nombre }} ({{ hab.nivel }}%) - {{ hab.categoria }}</p>
+            {% endfor %}
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            {% for proyecto in proyectos %}
+            <h3>{{ proyecto.titulo }}</h3>
+            <p>{{ proyecto.descripcion }}</p>
+            {% if proyecto.url_demo %}
+            <a href="{{ proyecto.url_demo }}" target="_blank">Ver demo</a>
+            {% endif %}
+            {% if proyecto.url_codigo %}
+            | <a href="{{ proyecto.url_codigo }}" target="_blank">Código</a>
+            {% endif %}
+            {% endfor %}
+        </section>
+
+    </div>
+
+</body>
+
+</html>
