@@ -8,3 +8,4 @@ admin.site.register(Certificado)
 admin.site.register(Habilidad)
 admin.site.register(Proyecto)
 
+
