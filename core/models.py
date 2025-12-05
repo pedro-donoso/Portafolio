@@ -61,5 +61,12 @@ class Proyecto(models.Model):
     destacado = models.BooleanField(default=True)
     orden = models.PositiveIntegerField(default=0)
 
-    def __str__(self):
-        return self.titulo
+    imagen_static = models.CharField(
+        max_length=200,
+        blank=True,
+        help_text="Ruta dentro de static/, por ejemplo: img/proyecto1.png",
+    )
+
+
+def __str__(self):
+    return self.titulo

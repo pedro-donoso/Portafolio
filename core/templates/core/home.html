@@ -168,12 +168,13 @@
             {% for proyecto in proyectos %}
             <h3 class="h6 fw-bold mb-1">{{ proyecto.titulo }}</h3>
 
-            {# 1) Imagen subida por admin (ImageField) #}
-            {% if proyecto.imagen %}
-            <img src="{% static 'img/proyecto-placeholder.png' %}" alt="Proyecto sin imagen" class="img-fluid mb-2"
+            {% if proyecto.titulo == "Gestión de Productos" %}
+            <img src="{% static 'img/uno.png' %}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
+                style="max-height: 200px; object-fit: cover;">
+            {% elif proyecto.titulo == "Login Compose" %}
+            <img src="{% static 'img/dos.png' %}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
                 style="max-height: 200px; object-fit: cover;">
             {% else %}
-            {# 2) Placeholder estático si no hay imagen en BD #}
             <img src="{% static 'img/proyecto-placeholder.png' %}" alt="Proyecto sin imagen" class="img-fluid mb-2"
                 style="max-height: 200px; object-fit: cover;">
             {% endif %}
@@ -201,6 +202,7 @@
                 </a>
             </div>
         </section>
+
 
 
     </div>
