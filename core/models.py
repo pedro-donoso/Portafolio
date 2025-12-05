@@ -38,5 +38,20 @@ class Certificado(models.Model):
     descripcion = models.TextField(blank=True)
     orden = models.PositiveIntegerField(default=0)
 
+
+def __str__(self):
+    return self.nombre
+
+
+class Habilidad(models.Model):
+    nombre = models.CharField(max_length=100)
+    nivel = models.PositiveIntegerField(default=0)
+    categoria = models.CharField(
+        max_length=100,
+        blank=True
+    )
+    orden = models.PositiveIntegerField(default=0)
+
+
 def __str__(self):
     return self.nombre
