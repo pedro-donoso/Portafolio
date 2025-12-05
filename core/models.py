@@ -14,3 +14,17 @@ class Perfil(models.Model):
 
 def __str__(self):
     return self.nombre
+
+
+class Experiencia(models.Model):
+    empresa = models.CharField(max_length=150)
+    puesto = models.CharField(max_length=150)
+    descripcion = models.TextField()
+    fecha_inicio = models.DateField()
+    fecha_fin = models.DateField(blank=True, null=True)
+    actual = models.BooleanField(default=False)
+    orden = models.PositiveIntegerField(default=0)
+
+
+def __str__(self):
+    return f"{self.puesto} - {self.empresa}"
