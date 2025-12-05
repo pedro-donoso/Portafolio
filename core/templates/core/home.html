@@ -168,11 +168,11 @@
             {% for proyecto in proyectos %}
             <h3 class="h6 fw-bold mb-1">{{ proyecto.titulo }}</h3>
 
-            {% if proyecto.titulo == "Gestión de Productos" %}
-            <img src="{% static 'img/uno.png' %}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
-                style="max-height: 200px; object-fit: cover;">
-            {% elif proyecto.titulo == "Login Compose" %}
+            {% if proyecto.titulo == "Gestión de Tienda – Django + ORM" %}
             <img src="{% static 'img/dos.png' %}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
+                style="max-height: 200px; object-fit: cover;">
+            {% elif proyecto.titulo == "Gestión de Productos" %}
+            <img src="{% static 'img/uno.png' %}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
                 style="max-height: 200px; object-fit: cover;">
             {% else %}
             <img src="{% static 'img/proyecto-placeholder.png' %}" alt="Proyecto sin imagen" class="img-fluid mb-2"
@@ -183,11 +183,7 @@
             {% if proyecto.tecnologias %}
             <p><em>{{ proyecto.tecnologias }}</em></p>
             {% endif %}
-            {% if proyecto.url_demo %}
-            <a href="{{ proyecto.url_demo }}" target="_blank">Ver demo</a>
-            {% endif %}
             {% if proyecto.url_codigo %}
-            {% if proyecto.url_demo %} | {% endif %}
             <a href="{{ proyecto.url_codigo }}" target="_blank">Código</a>
             {% endif %}
             <hr>
@@ -202,6 +198,7 @@
                 </a>
             </div>
         </section>
+
 
 
 
