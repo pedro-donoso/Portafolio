@@ -52,23 +52,38 @@
 
     <div class="content-container">
 
-        <!-- PERFIL -->
+        <!-- BANNER / PERFIL DESTACADO -->
         <section id="perfil" class="mb-4">
+            <div class="card mb-4 border-0 shadow-sm" style="background: linear-gradient(135deg, #1857d8, #4e9af7);">
+                <div class="card-body text-center text-white">
+                    <h1 class="h3 fw-bold mb-1 text-uppercase">
+                        PEDRO EDUARDO DONOSO RAMÍREZ
+                    </h1>
+                    <p class="mb-2 fw-semibold">
+                        Desarrollador Full Stack · Django · Kotlin · JavaScript
+                    </p>
+                    <p class="mb-3">
+                        <a href="https://wa.me/56953968887" target="_blank"
+                            class="text-white text-decoration-none fw-semibold">
+                            📱 +56 9 5396 8887
+                        </a>
+                        &nbsp;|&nbsp;
+                        <a href="mailto:pedro.eduardo.donoso@gmail.com"
+                            class="text-white text-decoration-none fw-semibold">
+                            📧 pedro.eduardo.donoso@gmail.com
+                        </a>
+                        {% if perfil.linkedin %}
+                        &nbsp;|&nbsp;
+                        <a href="{{ perfil.linkedin }}" target="_blank"
+                            class="text-white text-decoration-none fw-semibold">
+                            in LinkedIn
+                        </a>
+                        {% endif %}
+                    </p>
 
-            <!-- Encabezado centrado -->
-            <div class="text-center mb-4">
-                <h1 class="h3 fw-bold mb-1">PEDRO EDUARDO DONOSO RAMÍREZ</h1>
-                <p class="mb-0">
-                    Desarrollador Full Stack |
-                    <a href="https://wa.me/56953968887" target="_blank" class="text-decoration-none">
-                        📱 +56 9 5396 8887
-                    </a>
-                    |
-                    <a href="mailto:pedro.eduardo.donoso@gmail.com" class="text-decoration-none">
-                        📧 pedro.eduardo.donoso@gmail.com
-                    </a>
-                </p>
+                </div>
             </div>
+
 
             <h2 class="h4 mt-4">Perfil Profesional</h2>
             <p>{{ perfil.resumen|linebreaks }}</p>
@@ -198,9 +213,6 @@
                 </a>
             </div>
         </section>
-
-
-
 
     </div>
 
