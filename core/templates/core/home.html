@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -162,8 +164,20 @@
         <!-- PROYECTOS -->
         <section id="proyectos" class="mb-4">
             <h2 class="h4">Proyectos</h2>
+
             {% for proyecto in proyectos %}
             <h3 class="h6 fw-bold mb-1">{{ proyecto.titulo }}</h3>
+
+            {# 1) Imagen subida por admin (ImageField) #}
+            {% if proyecto.imagen %}
+            <img src="{{ proyecto.imagen.url }}" alt="{{ proyecto.titulo }}" class="img-fluid mb-2"
+                style="max-height: 200px; object-fit: cover;">
+            {% else %}
+            {# 2) Placeholder estático si no hay imagen en BD #}
+            <img src="{% static 'img/proyecto-placeholder.png' %}" alt="Proyecto sin imagen" class="img-fluid mb-2"
+                style="max-height: 200px; object-fit: cover;">
+            {% endif %}
+
             <p>{{ proyecto.descripcion }}</p>
             {% if proyecto.tecnologias %}
             <p><em>{{ proyecto.tecnologias }}</em></p>
@@ -182,14 +196,12 @@
 
             <div class="mt-4 text-center">
                 <p class="mb-2">Ver más proyectos en mi repositorio:</p>
-                <a href="https://github.com/pedro-donoso"
-                   target="_blank"
-                   class="btn btn-outline-primary">
+                <a href="https://github.com/pedro-donoso" target="_blank" class="btn btn-outline-primary">
                     GitHub Profile
                 </a>
             </div>
-
         </section>
+
 
     </div>
 

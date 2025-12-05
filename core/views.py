@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from .models import Perfil, Experiencia, Certificado, Habilidad, Proyecto
 
 
@@ -17,5 +18,6 @@ def home_view(request):
         'proyectos': proyectos,
     }
     return render(request, 'core/home.html', context)
+
 
 
