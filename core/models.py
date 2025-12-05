@@ -55,3 +55,22 @@ class Habilidad(models.Model):
 
 def __str__(self):
     return self.nombre
+
+
+class Proyecto(models.Model):
+    titulo = models.CharField(max_length=200)
+    descripcion = models.TextField()
+    imagen = models.ImageField(upload_to='proyectos/', blank=True, null=True)
+    url_demo = models.URLField(blank=True)
+    url_codigo = models.URLField(blank=True)
+    tecnologias = models.CharField(
+        max_length=200,
+        blank=True
+    )
+    fecha = models.DateField(blank=True, null=True)
+    destacado = models.BooleanField(default=True)
+    orden = models.PositiveIntegerField(default=0)
+
+
+def __str__(self):
+    return self.titulo
