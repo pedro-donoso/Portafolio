@@ -15,7 +15,7 @@ Este portafolio es una muestra de mis habilidades, proyectos y experiencia profe
 - **Django** ⚙️
 - HTML5 / CSS3
 - JavaScript
-- Git & GitHub
+- Git
 
 ---
 
@@ -28,19 +28,18 @@ Este portafolio es una muestra de mis habilidades, proyectos y experiencia profe
 ---
 
 ## 💼 Proyectos destacados
-- [📂 GestionProductos-django](https://github.com/pedro-donoso/GestionProductos-django)
-- [📂 Blog Personal con autenticación](https://github.com/tuusuario/proyecto2)
-- [📂 API REST con Django Rest Framework](https://github.com/tuusuario/proyecto3)
+- [📂 Gestion Productos Django](https://github.com/pedro-donoso/GestionProductos-django)
+- [📂 Tienda Django](https://github.com/pedro-donoso/tienda_django-portafolio7)
 
 ---
 
 ## 🌐 Demo en línea
-👉 [Ver Portafolio en Render](https://render.com)
+👉 [Ver Portafolio en Render](https://portafolio-2jde.onrender.com/)
 
 ---
 
 ## 📧 Contacto
 ¿Quieres ponerte en contacto conmigo?
-- 📬 Email: **tuemail@ejemplo.com**
-- 💼 LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
-- 🐙 GitHub: [github.com/tuusuario](https://github.com/tuusuario)
+- 📬 Email: **pedro.donoso@tutamail.com**
+- 💼 LinkedIn: [linkedin.com/in/tuusuario](www.linkedin.com/in/pedro-donoso-frontend)
+- 🐙 GitHub: [github.com/tuusuario](https://github.com/pedro-donoso)
