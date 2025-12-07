@@ -4,8 +4,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-gwz&0mfao*%fqgi6)eot*5=q5(wv+53)ftg)phvyjj#9_ho%7q'
-DEBUG = True
-ALLOWED_HOSTS = ['portafolio-2jde.onrender.com',]
+DEBUG =False
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'portafolio-2jde.onrender.com',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
