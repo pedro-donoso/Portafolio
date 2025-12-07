@@ -28,7 +28,7 @@ Este portafolio es una muestra de mis habilidades, proyectos y experiencia profe
 ---
 
 ## 💼 Proyectos destacados
-- [📂 CRUD con Django y MySQL](https://github.com/tuusuario/proyecto1)
+- [📂 GestionProductos-django](https://github.com/pedro-donoso/GestionProductos-django)
 - [📂 Blog Personal con autenticación](https://github.com/tuusuario/proyecto2)
 - [📂 API REST con Django Rest Framework](https://github.com/tuusuario/proyecto3)
 
