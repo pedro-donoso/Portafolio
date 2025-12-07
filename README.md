@@ -41,5 +41,5 @@ Este portafolio es una muestra de mis habilidades, proyectos y experiencia profe
 ## 📧 Contacto
 ¿Quieres ponerte en contacto conmigo?
 - 📬 Email: **pedro.donoso@tutamail.com**
-- 💼 LinkedIn: [linkedin.com/in/tuusuario](www.linkedin.com/in/pedro-donoso-frontend)
-- 🐙 GitHub: [github.com/tuusuario](https://github.com/pedro-donoso)
+- 💼 LinkedIn: [linkedin.com/in/pedro-donoso-frontend](www.linkedin.com/in/pedro-donoso-frontend)
+- 🐙 GitHub: [github.com/pedro-donoso](https://github.com/pedro-donoso)
