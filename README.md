@@ -1,5 +1,14 @@
 # Portafolio Personal
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-online-success)
+![Deploy](https://img.shields.io/badge/deploy-Render-blueviolet)
+![Made with](https://img.shields.io/badge/made%20with-Django%20%7C%20Vue.js%20%7C%20Kotlin-orange)
+
+## 📌 Descripción
+Este proyecto es un **portafolio web** desarrollado para mostrar mis habilidades, proyectos y experiencia profesional...
+
+
 ## 📌 Descripción
 Este proyecto es un **portafolio web** desarrollado para mostrar mis habilidades, proyectos y experiencia profesional.
 Está desplegado en [Render](https://portafolio-2jde.onrender.com/), lo que permite acceder a él desde cualquier dispositivo con conexión a internet.
