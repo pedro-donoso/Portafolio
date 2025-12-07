@@ -1,61 +1,44 @@
-# Portafolio Personal
+# 🌟 Portafolio Personal
 
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-online-success)
-![Deploy](https://img.shields.io/badge/deploy-Render-blueviolet)
-![Made with](https://img.shields.io/badge/made%20with-Django%20%7C%20Vue.js%20%7C%20Kotlin-orange)
+![Banner](https://via.placeholder.com/1200x300.png?text=Bienvenido+a+mi+Portafolio)
 
-## 📌 Descripción
-Este proyecto es un **portafolio web** desarrollado para mostrar mis habilidades, proyectos y experiencia profesional...
-
-
-## 📌 Descripción
-Este proyecto es un **portafolio web** desarrollado para mostrar mis habilidades, proyectos y experiencia profesional.
-Está desplegado en [Render](https://portafolio-2jde.onrender.com/), lo que permite acceder a él desde cualquier dispositivo con conexión a internet.
-
-El objetivo principal es contar con una plataforma digital que refleje mi trabajo y facilite el contacto con potenciales empleadores o colaboradores.
+## 👋 Sobre mí
+Hola, soy **[Tu Nombre]**, desarrollador web apasionado por crear soluciones digitales que combinen funcionalidad y diseño.
+Este portafolio es una ventana a mis proyectos, habilidades y experiencia profesional, pensado para facilitar el contacto con empleadores y colaboradores.
 
 ---
 
-## 🚀 Tecnologías utilizadas
-- **python
-- **django
+## 🚀 Tecnologías que domino
+- **Python** 🐍
+- **Django** ⚙️
+- HTML5 / CSS3
+- JavaScript
+- Git & GitHub
 
 ---
 
-## 📸 Funcionalidades principales
+## 📸 Funcionalidades principales del portafolio
+- Presentación personal y perfil profesional.
+- Sección de proyectos con descripción y enlaces.
+- Formulario de contacto y links a redes sociales.
+- Diseño responsivo para móviles y escritorio.
 
-Presentación personal y perfil profesional.
+---
 
-Sección de proyectos con descripción y enlaces.
-
-Contacto mediante formulario o links a redes sociales.
-
-Diseño responsivo para móviles y escritorio.
+## 💼 Proyectos destacados
+- [📂 Proyecto 1: Aplicación CRUD con Django](https://github.com/tuusuario/proyecto1)
+- [📂 Proyecto 2: Blog Personal con autenticación](https://github.com/tuusuario/proyecto2)
+- [📂 Proyecto 3: API REST con Django Rest Framework](https://github.com/tuusuario/proyecto3)
 
 ---
 
 ## 🌐 Demo en línea
-El portafolio está disponible en: 👉 Portafolio en Render
+👉 [Ver Portafolio en Render](https://render.com)
 
 ---
 
 ## 📧 Contacto
 Si quieres ponerte en contacto conmigo:
-
-Email: tuemail@ejemplo.com
-
-LinkedIn: linkedin.com/in/tuusuario
-
-GitHub: github.com/tuusuario
-
----
-
-## 📧 Contacto
-Si quieres ponerte en contacto conmigo:
-
-Email: tuemail@ejemplo.com
-
-LinkedIn: linkedin.com/in/tuusuario
-
-GitHub: github.com/tuusuario
+- Email: **tuemail@ejemplo.com**
+- LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario)
+- GitHub: [github.com/tuusuario](https://github.com/tuusuario)
