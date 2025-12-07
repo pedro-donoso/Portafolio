@@ -1,7 +1,7 @@
 # 🌟 Portafolio Personal
 
 <p align="center">
-  <img src="assets/banner.png" alt="Banner Portafolio" width="100%" />
+  <img src="assets/banner.png" alt="Banner Portafolio" width="50%" />
 </p>
 
 ## 👋 Sobre mí
