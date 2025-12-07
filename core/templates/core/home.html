@@ -27,27 +27,36 @@
 
 <body>
 
-    <!-- NAVBAR BOOTSTRAP CENTRADO -->
+    <!-- NAVBAR BOOTSTRAP CENTRADO Y RESPONSIVO -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container justify-content-center">
-            <ul class="navbar-nav nav-underline justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#perfil">Perfil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#certificados">Certificados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#proyectos">Proyectos</a>
-                </li>
-            </ul>
+      <div class="container justify-content-center">
+        <!-- Botón hamburguesa para pantallas pequeñas -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenedor colapsable del menú -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+          <ul class="navbar-nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link" href="#perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificados">Certificados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="content-container">
